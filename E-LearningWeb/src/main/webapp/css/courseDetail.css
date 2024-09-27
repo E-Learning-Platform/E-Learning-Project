@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f7c94b;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+    --transition: all 400ms ease;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff;
+    max-width: 1200px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    max-width: 50%;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.highlight {
+    color: #5869d4;
+}
+
+.features {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.icon-video:before,
+.icon-people:before,
+.icon-pyq:before {
+    content: "📹"; /* Add relevant icons */
+    margin-right: 10px;
+}
+
+.icon-people:before {
+    content: "👥";
+}
+
+.icon-pyq:before {
+    content: "📘";
+}
+
+.enroll-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff6d00;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+.enroll-button:hover {
+    background-color: #e65c00;
+}
+
+.right-section {
+    text-align: center;
+}
+
+.student-image {
+    border-radius: 50%;
+    width: 300px;
+    height: auto;
+}
+
+.info-circle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.info-item {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Design the DElta and sigma style */
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.course-comparison {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px auto;
+    max-width: 1200px;
+}
+
+.course-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.course-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-card .symbol {
+    font-size: 24px;
+    color: #5869d4;
+}
+
+.course-card p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.course-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.course-card ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.action-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #5869d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: #4557a6;
+}
+
+@media (max-width: 768px) {
+    .course-comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* end the style of delta and sigma course */
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.testimonials-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.text-content {
+    max-width: 40%;
+}
+
+.text-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.text-content .highlight {
+    color: #5869d4;
+}
+
+.text-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.testimonial-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.testimonial {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial .name {
+    font-weight: bold;
+}
+
+.testimonial .company {
+    color: #4a90e2;
+}
+
+@media (max-width: 768px) {
+    .companies {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .text-content {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .images-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 100%;
+    }
+}
+
+
+
+/* ----------------------------------------------------- */
+
+
+/* --------------------------------------------- */
+
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.grid {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1, h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul li i {
+    margin-right: 10px;
+}
+
+.enroll-button, .action-button, .testimonial-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.enroll-button:hover, .action-button:hover, .testimonial-button:hover {
+    background-color: #0056b3;
+}
+
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo-item {
+    margin: 10px;
+}
+
+.logo-item img {
+    max-height: 50px;
+    max-width: 100px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #666;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

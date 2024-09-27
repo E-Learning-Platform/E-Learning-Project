@@ -1,0 +1,462 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #0056b3;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #007bff;
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 100px 0;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 40px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Course Info Styles */
+.course-info {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.box {
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.course-duration {
+    background-color: rgba(227, 242, 253, 0.7);
+    color: #0d47a1;
+    border: 2px solid #2196f3;
+}
+
+.course-language {
+    background-color: rgba(255, 243, 224, 0.7);
+    color: #e65100;
+    border: 2px solid #ff9800;
+}
+
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Styles */
+.button {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    backdrop-filter: blur(5px);
+}
+
+.button:hover {
+    background-color: rgba(0, 86, 179, 0.9);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Section Styles */
+section {
+    padding: 80px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    margin-bottom: 60px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #333;
+    text-align: center;
+}
+
+/* Partners Section */
+.partners {
+    background-color: rgba(248, 249, 250, 0.7);
+}
+
+.partner-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.partner-logos img {
+    max-width: 120px;
+    height: auto;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+.partner-logos img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+/* Curriculum Section */
+.curriculum-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.curriculum-items {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.curriculum-item {
+    border: 1px solid rgba(224, 224, 224, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    backdrop-filter: blur(5px);
+}
+
+.curriculum-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.curriculum-item .icon {
+    font-size: 24px;
+    color: #007bff;
+    margin-right: 15px;
+}
+
+.curriculum-item h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.curriculum-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Instructors Section */
+.instructor-card {
+    display: flex;
+    align-items: center;
+    border: 1px solid rgba(224, 224, 224, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.instructor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.instructor-image img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #007bff;
+}
+
+.instructor-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.instructor-info p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Certificate Section */
+.certificate-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Free Demo Section */
+.demo-card {
+    background-color: rgba(248, 249, 250, 0.7);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.demo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    background-color: rgba(248, 249, 250, 0.9);
+}
+
+.demo-info {
+    padding: 30px;
+}
+
+/* FAQ Section */
+.faq-item {
+    border: 1px solid rgba(224, 224, 224, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* CTA Section */
+.cta {
+    background-color: rgba(0, 123, 255, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.cta h2 {
+    color: #fff;
+}
+
+.cta .button {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #007bff;
+}
+
+.cta .button:hover {
+    background-color: #fff;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(51, 51, 51, 0.9);
+    color: #fff;
+    padding: 60px 0 30px;
+    backdrop-filter: blur(10px);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.footer-info, .footer-links {
+    flex: 1;
+    margin-bottom: 30px;
+}
+
+.footer-info h3, .footer-links h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icon img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover img {
+    transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero, .curriculum-content, .footer-content {
+        flex-direction: column;
+    }
+
+    .hero-content, .hero-image {
+        text-align: center;
+        padding-right: 0;
+    }
+
+    .course-info {
+        flex-direction: column;
+    }
+
+    .curriculum-items {
+        margin-left: 0;
+    }
+
+    .instructor-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .instructor-image img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .partner-logos img {
+        max-width: 100px;
+    }
+}

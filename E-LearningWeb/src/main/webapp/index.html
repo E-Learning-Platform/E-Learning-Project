@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Multipage Education Website using HTML, CSS, JavaScript</title>
+    <!-- ----ICONSCOUT-CDN -->
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ---------------Swiper js--------------------- -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ----------------closeSwiper------------ -->
+
+
+
+</head>
+
+<body>
+    <nav>
+        <div class="container nav__container">
+            <a href="index.html">
+                <h4>E-LEARNING</h4>
+            </a>
+            <ul class="nav__menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="signup.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">profile</a></li>
+            </ul>
+            <button id="open-menu-btn"><i class="uil uil-bars"></i></button>
+            <button id="close-menu-btn"><i class="uil uil-multiply"></i></button>
+
+        </div>
+    </nav>
+
+    <!-- END OF NAVBAR -->
+
+    <header>
+        <div class="container header__container">
+            <div class="header__left">
+                <h1>Grow your skills to advance your career path</h1>
+                <p>Elevate your skills to unlock new career opportunities. With continuous learning and development, you
+                    can stay competitive in your field, advance professionally, and achieve long-term success in your
+                    career path.</p>
+                <a href="signup.html" class="btn btn-primary" onclick="window.location.href='signup.html'">Get
+                    Started</a>
+            </div>
+            <div class="header__right">
+                <div class="header__right-image">
+                    <img src="images/header.svg">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- END OF HEADER -->
+
+    <section class="categories">
+        <div class="container categories__container">
+            <div class="categories__left">
+                <h1>Categories</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Mollitia dicta neque illo eos accusantium
+                    vero perspiciatis ducimus sint aliquid praesentium.</p>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+            <div class="categories__right">
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-bitcoin-circle"></i></span>
+                    <h5>Blockchain</h5>
+                    <p>Learn blockchain, smart contracts, and decentralized systems for secure solutions.
+
+                    </p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-palette"></i></span>
+                    <h5>Design</h5>
+                    <p>Master UI/UX and graphic design to create engaging experiences.
+
+                    </p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-usd-circle"></i></span>
+                    <h5>Finance</h5>
+                    <p>Learn financial planning and investment to manage and grow wealth.</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-megaphone"></i></span>
+                    <h5>Marketing</h5>
+                    <p>Understand digital marketing strategies to effectively promote and engage audiences.</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-music"></i></span>
+                    <h5>Music</h5>
+                    <p>Explore music theory, composition, and production to enhance musical skills.</p>
+                </article>
+                <article class="category">
+                    <span class="category__icon"><i class="uil uil-puzzle-piece"></i></span>
+                    <h5>Games</h5>
+                    <p>Learn game design and development to create interactive experiences.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- END OF ICON CATEGORY -->
+
+    <!-- OUR POPULAR COURSES -->
+    <section class="courses">
+        <h2>OUR POPULAR Courses</h2>
+        <div class="container courses__container">
+            <article class="course">
+                <div class="courses__image">
+                    <img src="./images/data-science.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>Data Science</h4>
+                    <p>Analyze and visualize data to uncover insights and trends.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="courses__image">
+                    <img src="./images/course2.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>Software Technology</h4>
+                    <p>Develop scalable software solutions using modern tools and methodologies.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+            <article class="course">
+                <div class="courses__image">
+                    <img src="./images/Cyber-Security.jpg">
+                </div>
+                <div class="course__info">
+                    <h4>Cyber Security</h4>
+                    <p>Safeguard systems from threats with advanced security measures and practices.</p>
+                    <a href="courses.html" class="btn btn-primary">Learn More</a>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- END OF POPULAR COURSES -->
+
+    <!-- FAQ SECTION -->
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs__container">
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What is an e-learning platform, and how does it work?</h4>
+                    <p>An e-learning platform is an integrated set of interactive online services that provide trainers, learners, and others involved in education with information, tools, and resources to support and enhance education delivery and management</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do I enroll in a course on the platform?</h4>
+                    <p>Enrollment processes vary across platforms. Typically, you need to create an account, browse the course catalog, and select the desired course. Some platforms may require payment or provide access codes for enrollment.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Do I receive a certificate after completing a course?</h4>
+                    <p>Many e-learning platforms provide certificates upon course completion, which can be valuable for professional development. However, this varies by platform and course, so it's advisable to check the specific course details.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Are the courses self-paced or instructor-led?</h4>
+                    <p>E-learning platforms offer various formats, including self-paced courses, instructor-led sessions, or a blend of both. The choice depends on the platform and the specific course design.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Can I download course materials for offline access?</h4>
+                    <p>Some platforms allow downloading course materials for offline use, while others may restrict access to online streaming. Check the platform's features to see if offline access is available.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>Is there a deadline to complete the courses?</h4>
+                    <p>Course completion deadlines vary. Self-paced courses may offer flexible timelines, whereas instructor-led courses might have fixed schedules. Always verify the course duration and any deadlines before enrolling.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>What skills can I expect to gain from e-learning?</h4>
+                    <p>You can gain both soft skills (communication, problem-solving) and hard skills (programming, design) depending on the course content.</p>
+                </div>
+            </article>
+
+            <article class="faq">
+                <div class="faq__icon"><i class="uil uil-plus"></i></div>
+                <div class="question__answer">
+                    <h4>How do I ask questions during the course?</h4>
+                    <p>You can ask questions via discussion forums, live chats, or email communication with instructors or course facilitators.</p>
+                </div>
+            </article>
+
+            <!-- Add more FAQ articles as needed -->
+
+        </div>
+    </section>
+    <!-- //------------------End of the faqs------------------// -->
+
+    <section class="container testimonials__container mySwiper">
+        <h2>Student' testimonials </h2>
+        <div class="swiper-wrapper">
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Dina Ayi</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, iste fuga dignissimos cumque quo
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="images/avatar2.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Ankit Sah</h5>
+                    <small>Software Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, iste fuga dignissimos cumque quo
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Rahul Kumar</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, iste fuga dignissimos cumque quo
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>Er. Reshmi</h5>
+                    <small>Full Stack Developer</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, iste fuga dignissimos cumque quo
+                    </p>
+                </div>
+            </article>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+    </section>
+
+    <!-- ------------------------footer start--------------------------------- -->
+    <footer>
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>E-LEARNING</h4>
+                </a>
+                <p>Elevate your skills to unlock new career opportunities. With continuous learning and development, you can stay competitive in your field, advance professionally, and achieve long-term success in your career path.</p>
+            </div>
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h4>Privacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div>
+                    <p>+91 123 456 7890</p>
+                    <p>vikkibanka73@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li><a href="https://www.facebook.com/vikki.rathour.90?mibextid=ZbWKwL"><i
+                                class="uil uil-facebook-f"></i></a></li>
+                    <li><a href="https://www.instagram.com/vikkirajput45?igsh=MWZ1MjQ4NHAya2oxMQ=="><i
+                                class="uil uil-instagram"></i></a></li>
+                    <li><a href="#"><i class="uil uil-twitter"></i></a></li>
+                    <li><a
+                            href="https://www.linkedin.com/in/vishwajeet-kumar-840251307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                                class="uil uil-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+        <div class="footer__copyright">
+            <small> 2024 All rights reserved.</small>
+    </footer>
+    <!-- ------------------------footer end--------------------------------- -->
+
+    <!-- SWIPER JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript code for Swiper initialization -->
+    <script>
+        var swiper = new Swiper('.mySwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 2
+                }
+            }
+        });
+    </script>
+    <!-- Custom JS -->
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
